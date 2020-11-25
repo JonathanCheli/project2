@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LikeAndDislikeModelu</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="reviewscreen">ReviewScreen</string>
+    <string name="review_screen">Review Screen</string>
+    <string name="standardimage">standardImage</string>
+    <string name="start">Start</string>
+    <string name="imagendeprue">imagendeprue</string>
+    <string name="title_standard">Title standard</string>
+    <string name="switch_view">Switch view</string>
+</resources>

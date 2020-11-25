@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints"
+    android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/review_screen"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:background="@drawable/button_background"
+            android:onClick="navToReviewScreen"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:layout_gravity="top">
+
+                <Button
+                    android:id="@+id/left"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_baseline_thumb_down_24"
+                    android:onClick="left" />
+
+
+                <Button
+                    android:id="@+id/right"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_baseline_thumb_up_alt_24"
+                    android:onClick="right"/>
+
+
+        </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
