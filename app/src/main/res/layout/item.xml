@@ -12,6 +12,8 @@
     android:outlineProvider="bounds"
     android:clipToPadding="false">
 
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview_id"
         android:layout_width="wrap_content"
@@ -20,21 +22,22 @@
         app:cardCornerRadius="4dp"
         android:elevation="2dp">
 
+
         <LinearLayout
             android:layout_gravity="center"
-            android:layout_width="270dp"
+            android:layout_width="350dp"
             android:background="#FFFFFF"
-            android:layout_height="300dp"
+            android:layout_height="400dp"
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/image_id"
+                android:id="@+id/item_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:contentDescription="@string/standardimage" />
+                android:contentDescription="@string/standardimageeee" />
             <TextView
-                android:id="@+id/title_id"
+                android:id="@+id/item_title"
                 android:textSize="40sp"
                 android:textColor="@color/black"
                 android:gravity="center"
@@ -48,6 +51,9 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+
+
 
 
 </FrameLayout>

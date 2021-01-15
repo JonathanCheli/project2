@@ -9,4 +9,29 @@
     <string name="imagendeprue">imagendeprue</string>
     <string name="title_standard">Title standard</string>
     <string name="switch_view">Switch view</string>
+    <string name="standardimageeee">standardimageeee</string>
+    <string name="pick_your_favorite_view_from_the_menu">Pick your favorite view from the menu!</string>
+    <string name="_0">0</string>
+    <string name="btnstandard">btnstandard</string>
+    <string name="_0_">0</string>
+    <string name="standard">/</string>
+    <string name="_0__">0</string>
+    <string name="_0___">0</string>
+    <string name="standard2">/</string>
+    <string name="btnstandar2">btnStandar2</string>
+    <string name="try_a_bit_later_to_see_more_amazing_home24_products">Try a bit later to see more amazing home24 products</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="email">email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="signout">Signout</string>
+    <string name="settings">Settings</string>
+    <string name="name">name</string>
+    <string name="phone">phone</string>
+    <string name="address">address</string>
+    <string name="credit_card">credit card</string>
+    <string name="confirm">Confirm</string>
+    <string name="back">Back</string>
+
 </resources>

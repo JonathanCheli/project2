@@ -30,5 +30,18 @@
             android:padding="5dp"
             android:layout_alignParentTop="true" />
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_repeatCount="100"
+            app:lottie_loop="true"
+            android:layout_alignRight="@id/id_standard_txt"
+            app:lottie_rawRes="@raw/like"
+            android:translationX="110dp">
+        </com.airbnb.lottie.LottieAnimationView>
+
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

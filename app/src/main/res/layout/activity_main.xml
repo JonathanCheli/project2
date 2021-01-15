@@ -5,9 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@drawable/home24logo"
-    android:alpha="0.7"
     tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/home24logo" />
 
     <Button
         android:id="@+id/button"
@@ -15,9 +19,23 @@
         android:layout_height="wrap_content"
         android:text="@string/start"
         android:textColor="@color/black"
-        android:onClick="navToSelectionScreen"
         android:background="@drawable/button_background"
         android:layout_centerInParent="true"/>
+
+
+    <Button
+        android:id="@+id/logOutbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/signout"
+        android:textColor="@color/black"
+        android:layout_below="@+id/button"
+        android:onClick="logout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_background"
+        android:layout_alignParentTop="true"/>
+
 
 
 </RelativeLayout>

@@ -1,52 +1,224 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:layout_gravity="bottom"
     tools:ignore="MissingConstraints"
     android:layout_marginBottom="10dp">
 
-        <Button
+
+
+
+
+    <Button
+        android:id="@+id/btnReviewButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/button_background"
+        android:onClick="navToSelectionScreen"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:text="@string/review_screen"/>
+
+    <TextView
+        android:id="@+id/txt_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:textSize="17dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/simonetta"
+        android:text="@string/try_a_bit_later_to_see_more_amazing_home24_products">
+    </TextView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAni_id"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="invisible"
+        app:lottie_rawRes="@raw/hom24ani">
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/dislikeAni"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"
+                app:lottie_repeatCount="0"
+                app:lottie_progress="0"
+                android:translationX="182dp"
+                app:lottie_rawRes="@raw/dislike">
+            </com.airbnb.lottie.LottieAnimationView>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/likeAni"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                android:visibility="gone"
+                app:lottie_repeatCount="0"
+                app:lottie_progress="1"
+                android:translationX="110dp"
+                app:lottie_rawRes="@raw/like">
+            </com.airbnb.lottie.LottieAnimationView>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:gravity="bottom"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+            android:id="@+id/id_left"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:padding="10dp"
+            android:focusable="true"
+                android:background="@drawable/circle"
+            android:src="@drawable/ic_blue_thumb_down_24"
+                android:contentDescription="@string/btnstandar2" />
+
+        <TextView
+            android:id="@+id/totalAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/review_screen"
-            android:textSize="10dp"
-            android:gravity="center"
-            android:background="@drawable/button_background"
-            android:onClick="navToReviewScreen"
-            android:layout_gravity="center_horizontal"/>
+            android:text="@string/_0"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_marginStart="5dp"
+            style="@style/TextAppearance.AppCompat.Body1"/>
+
+        <TextView
+            android:id="@+id/slash1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/standard2"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            style="@style/TextAppearance.AppCompat.Body1"/>
+
+
+        <TextView
+            android:id="@+id/dislikescounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_marginStart="5dp"
+            style="@style/TextAppearance.AppCompat.Body1"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingStart="65dp"
+                android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/likescounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            style="@style/TextAppearance.AppCompat.Body1"/>
 
 
 
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom"
-            android:layout_gravity="top">
-
-                <Button
-                    android:id="@+id/left"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/ic_baseline_thumb_down_24"
-                    android:onClick="left" />
+        <TextView
+            android:id="@+id/slash2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/standard"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            style="@style/TextAppearance.AppCompat.Body1"/>
 
 
-                <Button
-                    android:id="@+id/right"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/ic_baseline_thumb_up_alt_24"
-                    android:onClick="right"/>
+        <TextView
+            android:id="@+id/totalAmount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            style="@style/TextAppearance.AppCompat.Body1"/>
+
+            <ImageButton
+                android:id="@+id/id_right"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle"
+                android:clickable="true"
+                android:contentDescription="@string/btnstandard"
+                android:focusable="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_blue_thumb_up_24" />
+
+            </LinearLayout>
+        </LinearLayout>
 
 
-        </RelativeLayout>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+</LinearLayout>

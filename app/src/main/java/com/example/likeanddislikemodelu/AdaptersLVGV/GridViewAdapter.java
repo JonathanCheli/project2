@@ -15,6 +15,7 @@ import android.widget.ArrayAdapter;
 import com.bumptech.glide.Glide;
 import com.example.likeanddislikemodelu.R;
 import com.example.likeanddislikemodelu.Model.ImagesResponse;
+import com.squareup.picasso.Picasso;
 
 public class GridViewAdapter extends ArrayAdapter<ImagesResponse>{
 
@@ -39,7 +40,11 @@ public View getView(int position, @Nullable View convertView, @NonNull ViewGroup
         ImageView imageView2 = view.findViewById(R.id.id_standarImage2);
 
 
-        imageView2.setImageResource(imagesResponse.getImages());
+        Picasso.get()
+                .load(imagesResponse.getImages())
+                .fit()
+                .centerCrop()
+                .into(imageView2);
 
 
         return view;
